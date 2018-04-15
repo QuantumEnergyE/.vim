@@ -12,14 +12,16 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 set rnu
-colorscheme molokai
 syntax on
 set tabstop=4
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
+colorscheme molokai
 set completeopt=longest,menu	"让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
+" provide python3
+let g:ycm_python_binary_path = '/usr/local/bin/python3.6'
