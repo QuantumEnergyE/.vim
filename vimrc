@@ -27,3 +27,10 @@ set foldlevel=99
 let g:ycm_python_binary_path = '/usr/local/bin/python3.6'
 " enable fzf
 set rtp+=/usr/local/opt/fzf
+" ale flake8 for python3
+let g:ale_python_flake8_executable = 'python3'   " or 'python' for Python 2
+let g:ale_python_flake8_options = '-m flake8'
+" enable flake8
+let g:ale_linters = {'python': ['flake8']}
+" enable yapf
+let g:ale_fixers = {'python': ['yapf']}
