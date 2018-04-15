@@ -34,3 +34,9 @@ let g:ale_python_flake8_options = '-m flake8'
 let g:ale_linters = {'python': ['flake8']}
 " enable yapf
 let g:ale_fixers = {'python': ['yapf']}
+" ale sign column
+let g:ale_sign_column_always = 1
+let g:ale_set_highlights = 0
+" ale error & warning
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚡'
