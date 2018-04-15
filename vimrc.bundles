@@ -18,6 +18,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'w0rp/ale'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
