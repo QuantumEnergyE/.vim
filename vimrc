@@ -14,6 +14,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 set rnu
 syntax on
 set tabstop=4
+set shiftwidth=4
 set expandtab
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
